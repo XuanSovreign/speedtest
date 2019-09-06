@@ -33,6 +33,7 @@ public class DownloadService extends Service {
         String ip = mPreferences.getString("ip_address", "");
 //        String path = "http://192.168.0.100:8080/down.rar";
         String path = "http://" + ip + "/down.rar";
+//        String path = "http://" + ip + "/hwhnServer.zip";
 //        mDownThread = new DownThread(path, file,2);
         mDownThread = new DownThread(path, 2);
         mDownThread.start();
